@@ -1,3 +1,6 @@
+div {
+  outline: 1px solid red; 
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -10,28 +13,89 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
 /*Пишем правило для лого */
-.logo-header{
-position: absolute;
-left: 64px;
-top: 30px;
-height: 32px;
-width: 228px;
+.logo-header {
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  height: 32px;
+  width: 228px;
+  z-index: 3;
 }
+.logo-image{
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  width: 228px;
+}
+
 /*Пишем правило для title */
+.title{
+  width: 730px;
+  margin-left: 64px;
+  z-index: 2;
+}
+.title-text{
+  margin: 0;
+  padding: 0;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 600;
+  }
 
 
+/*Пишем правило для subtitle */
+.subtitle{
+  position: absolute;
+  z-index: 1;
+  width: 388px;
+  margin-left: 64px;
+  bottom: 30px;
+}
+.subtitle-text{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+/*Пишем правило для main-illustration */
+.main-illustration{
+  position: absolute;
+  height: 608px;
+  width: 765px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.header-image {
+  height: 608px;
+  width: 765px;
+  bottom: 0;
+  right: 0;
+}
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
