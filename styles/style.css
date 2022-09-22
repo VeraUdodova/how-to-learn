@@ -159,17 +159,37 @@ div {
 }
 
 .section-title{
+  padding: 0;
   display: flex;
   width: 60%;
   margin: 0 auto 20px auto;
+  justify-content: center;
   /* align-items: center; */
+}
+.section-title-text{
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .section-subtitle{
+  padding: 0;
+  display: flex;
+  justify-content: center;
   width: 60%;
-  margin: 0 auto 20px auto;
-}
+  margin: 0 auto;
 
+}
+.section-subtitle-text{
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+}
 
 .digits__table{
   width: 1100px;
@@ -177,6 +197,21 @@ div {
   margin-right: auto;
   margin-bottom: 100px;
 }
+.digit__table-heading{
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.digit__table-text{
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal; 
+}
+
 
 .digit-row-first{
   margin: 60px 0;
@@ -190,9 +225,8 @@ div {
   justify-content: space-between;
 }
 .digit-cell{
-
+  padding: 0;
   width: 250px;
-
   border: 1px solid black
   
 }
