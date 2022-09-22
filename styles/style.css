@@ -157,3 +157,42 @@ div {
 .span-accent{
   font-weight: 600;
 }
+
+.section-title{
+  display: flex;
+  width: 60%;
+  margin: 0 auto 20px auto;
+  /* align-items: center; */
+}
+
+.section-subtitle{
+  width: 60%;
+  margin: 0 auto 20px auto;
+}
+
+
+.digits__table{
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.digit-row-first{
+  margin: 60px 0;
+}
+.digit-row-second{
+  margin-bottom: 100px;
+}
+
+.digit-row{
+  display: flex;
+  justify-content: space-between;
+}
+.digit-cell{
+
+  width: 250px;
+
+  border: 1px solid black
+  
+}
