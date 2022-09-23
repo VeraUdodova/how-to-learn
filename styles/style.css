@@ -1,7 +1,8 @@
 div {
-  outline: 1px solid red; 
+  outline: 1px solid red;
 
 }
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -36,7 +37,8 @@ div {
   width: 228px;
   z-index: 3;
 }
-.logo-image{
+
+.logo-image {
   margin: 0;
   padding: 0;
   height: 32px;
@@ -44,29 +46,31 @@ div {
 }
 
 /*Пишем правило для title */
-.title{
+.title {
   width: 730px;
   margin-left: 64px;
   z-index: 2;
 }
-.title-text{
+
+.title-text {
   margin: 0;
   padding: 0;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
-  }
+}
 
 
 /*Пишем правило для subtitle */
-.subtitle{
+.subtitle {
   position: absolute;
   z-index: 1;
   width: 388px;
   margin-left: 64px;
   bottom: 30px;
 }
-.subtitle-text{
+
+.subtitle-text {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -75,7 +79,7 @@ div {
 }
 
 /*Пишем правило для main-illustration */
-.main-illustration{
+.main-illustration {
   position: absolute;
   height: 608px;
   width: 765px;
@@ -83,6 +87,7 @@ div {
   right: 0;
   z-index: 1;
 }
+
 .header-image {
   height: 608px;
   width: 765px;
@@ -101,14 +106,14 @@ div {
 }
 
 
-/* Цифры и факты */
-.description{
+/* Description */
+.description {
   display: flex;
-  margin: 100px 0;
+  margin-top: 100px;
   justify-content: center;
 }
 
-.two-columns{
+.two-columns {
   display: flex;
   width: 80%;
   justify-content: space-between;
@@ -116,18 +121,18 @@ div {
   /* align-items: center; */
 }
 
-.brief{
+.brief {
   width: 175px;
   display: flex;
 }
 
-.brief-text{
+.brief-text {
   margin: 0;
   padding: 0;
   color: #2f80ed;
 }
 
-.main-text{
+.main-text {
   margin: 0;
   padding: 0;
   display: flex;
@@ -147,14 +152,17 @@ div {
   font-weight: normal;
 
 }
-.paragraph-middle{
+
+.paragraph-middle {
   margin: 30px 0;
 }
-.span-accent{
+
+.span-accent {
   font-weight: 600;
 }
 
-.section-title{
+/* Цифры и факты */
+.section-title {
   padding: 0;
   display: flex;
   width: 60%;
@@ -162,7 +170,8 @@ div {
   justify-content: center;
   /* align-items: center; */
 }
-.section-title-text{
+
+.section-title-text {
   margin: 0;
   padding: 0;
   line-height: 1.15;
@@ -170,7 +179,7 @@ div {
   font-weight: 600;
 }
 
-.section-subtitle{
+.section-subtitle {
   padding: 0;
   display: flex;
   justify-content: center;
@@ -178,7 +187,8 @@ div {
   margin: 0 auto;
 
 }
-.section-subtitle-text{
+
+.section-subtitle-text {
   margin: 0;
   padding: 0;
   line-height: 34px;
@@ -187,50 +197,58 @@ div {
 
 }
 
-.digits__table{
+.digits__table {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
-.digit__table-heading{
-  margin: 0 0 20px 0;
+
+.digits{
+  /* position: relative; */
+  padding: 100px 0;
+}
+
+.table-heading {
+  margin: 0;
   padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
 }
-.digit__table-text{
-  margin: 0;
+
+.table-text {
+  margin: 20px 0 0;
   padding: 0;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: normal; 
+  font-weight: normal;
 }
 
-.digit-row{
+.digit-row {
   /* margin: 0; */
   display: flex;
   justify-content: space-between;
 }
 
-.digit-row-first{
+.digit-row-first {
   margin: 60px 0;
 }
-.digit-row-second{
+
+.digit-row-second {
   /* margin-bottom: 100px; */
 }
 
 
-.digit-cell{
+.digit-cell {
   padding: 0;
   margin: 0;
   width: 250px;
   border: 1px solid black
-  }
+}
 
 /* Метод Фейнмана */
-.feynman{
+.feynman {
   background-color: #f2f2f2;
   position: relative;
   height: 790px;
@@ -238,7 +256,7 @@ div {
   padding-top: 100px;
 }
 
-.feynman__title{
+.feynman__title {
   /* justify-content: space-around ; */
   position: relative;
   text-align: center;
@@ -247,7 +265,7 @@ div {
   z-index: 1;
 }
 
-.feynman__title-text{
+.feynman__title-text {
   margin: 0;
   padding: 0;
   line-height: 1.15;
@@ -256,7 +274,7 @@ div {
   /* z-index: 1; */
 }
 
-.feynman__subtitle{
+.feynman__subtitle {
   position: relative;
   display: flex;
   justify-content: center;
@@ -264,7 +282,7 @@ div {
   z-index: 1;
 }
 
-.feynman__subtitle-text{
+.feynman__subtitle-text {
   margin: 0;
   padding: 0;
   line-height: 51px;
@@ -273,7 +291,7 @@ div {
   /* z-index: 1; */
 }
 
-.feynman__link{
+.feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
@@ -284,20 +302,46 @@ div {
   font-weight: normal;
 }
 
-.feynman__pic{
+.feynman__pic {
   position: absolute;
   height: 637px;
   width: 867px;
   left: 0;
   bottom: 0;
-
-}
-.feynman-photo{
 }
 
-.link{
+.link {
   text-decoration: none;
 }
+
+/* Принципы обучения от Джоша Кауфмана */
+.kaufman {
+  position: relative;
+  padding: 90px 0;
+  background-color: black;
+  overflow: hidden;
+}
+
+.kaufman__text-index {
+  position: relative;
+  z-index: 1;
+}
+
+.kaufman__table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kaufman__table-row-first {
+  /* margin: 80px 0; */
+}
+
+.kaufman__table-row-second {
+}
+
+
+.kaufman__table-heading {}
+.kaufman__table-text{}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -305,4 +349,64 @@ div {
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  }
+.text-theme-dark{
+  color: white;
 }
+.triangle{
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+.triangle-pic{
+  height: 877px;
+  width: 877px;
+}
+
+.footer_place{
+  background-color: black;
+  min-height: 350px;
+
+}
+
+.columns{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding:60px 0 40px 0;
+  width: 90%;
+}
+.column__content-copyright{
+  display: flex;
+  flex-basis: 711px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.column__content-info{}
+.column__content-social{}
+
+.logo__place-footer{
+  display: flexbox;
+  width: 228px;
+  height: 32px;
+  top: 0;
+  left: 0;
+}
+.author{
+  /* left: 0; */
+  /* bottom: 18px; */
+  margin: 18px 0;
+}
+.column-heading{
+  /* margin-bottom: 20px; */
+}
+.column-links{
+  margin: 20px 0 18px;
+}
+.social-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.column-link{}
