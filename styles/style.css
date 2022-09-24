@@ -1,8 +1,3 @@
-div {
-  /* outline: 1px solid red; */
-
-}
-
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -12,6 +7,29 @@ div {
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Удаление всех отступов */
+.margin-padding-deletion{
+  padding: 0;
+  margin: 0;
+}
+
+/* Форматирование текста */
+.line-format{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Авто-отступ по бокам */
+.horisontal-block-centering{
+  margin: 0 auto;
+}
+
+/* Убираем подчеркивание ссылки */
+.link {
+  text-decoration: none;
 }
 
 /* Научиться учиться */
@@ -29,23 +47,21 @@ div {
 }
 
 /*Пишем правило для лого */
-.logo-header {
+.logo_header {
   position: absolute;
   left: 64px;
   top: 30px;
-  /* height: 32px;
-  width: 228px; */
   z-index: 3;
 }
 
-.logo-image {
-  margin: 0;
-  padding: 0;
+.logo {
   height: 32px;
   width: 228px;
+}
+.logo__place_header{
   background-image: url(../images/logo_place_header.svg);
 }
-.logo__place-footer{
+.logo__place_footer{
   background-image: url(../images/logo_place_footer.svg);
 }
 
@@ -57,26 +73,21 @@ div {
 }
 
 .title-text {
-  margin: 0;
-  padding: 0;
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
 }
 
-
 /*Пишем правило для subtitle */
 .subtitle {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 388px;
   margin-left: 64px;
   bottom: 30px;
 }
 
 .subtitle-text {
-  margin: 0;
-  padding: 0;
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
@@ -85,8 +96,6 @@ div {
 /*Пишем правило для main-illustration */
 .main-illustration {
   position: absolute;
-  height: 608px;
-  width: 765px;
   bottom: 0;
   right: 0;
   z-index: 1;
@@ -95,8 +104,6 @@ div {
 .header-image {
   height: 608px;
   width: 765px;
-  bottom: 0;
-  right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -109,20 +116,18 @@ div {
   background-color: #2f80ed;
 }
 
-
 /* Description */
 .description {
   display: flex;
-  margin-top: 100px;
+  padding-top: 100px;
   justify-content: center;
 }
 
+/* блок с текстом про Главные проблемы обучения */
 .two-columns {
   display: flex;
   width: 80%;
   justify-content: space-between;
-  /* flex-direction: row; */
-  /* align-items: center; */
 }
 
 .brief {
@@ -131,30 +136,21 @@ div {
 }
 
 .brief-text {
-  margin: 0;
-  padding: 0;
   color: #2f80ed;
 }
 
+/* Все текстовые блоки */
 .main-text {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   width: 80%;
   min-width: 784px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .paragraph {
-  margin: 0;
-  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-
 }
 
 .paragraph-middle {
@@ -170,14 +166,11 @@ div {
   padding: 0;
   display: flex;
   width: 60%;
-  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .section-title-text {
-  margin: 0;
-  padding: 0;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -188,34 +181,17 @@ div {
   display: flex;
   justify-content: center;
   width: 60%;
-  margin: 0 auto;
-
-}
-
-.section-subtitle-text {
-  margin: 0;
-  padding: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-
 }
 
 .digits__table {
   width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-bottom: 100px; */
 }
 
 .digits{
-  /* position: relative; */
   padding: 100px 0;
 }
 
 .table-heading {
-  margin: 0;
-  padding: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -224,31 +200,16 @@ div {
 .table-text {
   margin: 20px 0 0;
   padding: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
-.digit-row {
-  /* margin: 0; */
+.table-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
-
-.digit-row-first {
-  margin: 60px 0;
-}
-
-.digit-row-second {
-  /* margin-bottom: 100px; */
-}
-
 
 .digit-cell {
-  padding: 0;
-  margin: 0;
   width: 250px;
-  /* border: 1px solid black */
 }
 
 /* Метод Фейнмана */
@@ -261,49 +222,36 @@ div {
 }
 
 .feynman__title {
-  /* justify-content: space-around ; */
   position: relative;
   text-align: center;
   width: 648px;
-  margin: 0 auto;
   z-index: 1;
 }
 
 .feynman__title-text {
-  margin: 0;
-  padding: 0;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  /* z-index: 1; */
 }
 
 .feynman__subtitle {
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 70px auto 0;
+  margin-top: 70px;
   z-index: 1;
 }
 
-.feynman__subtitle-text {
-  margin: 0;
-  padding: 0;
+.feynman__text {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  /* z-index: 1; */
 }
 
 .feynman__link {
   position: absolute;
   right: 48px;
   top: 50%;
-  margin: 0;
-  padding: 0;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
 }
 
 .feynman__pic {
@@ -312,10 +260,6 @@ div {
   width: 867px;
   left: 0;
   bottom: 0;
-}
-
-.link {
-  text-decoration: none;
 }
 
 /* Принципы обучения от Джоша Кауфмана */
@@ -332,28 +276,15 @@ div {
 }
 
 .kaufman__table-row {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 80px;
 }
-
-.kaufman__table-row-first {
-  /* margin: 80px 0; */
-}
-
-.kaufman__table-row-second {
-}
-
-
-.kaufman__table-heading {}
-.kaufman__table-text{}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
-  margin-top: 80px;
-  }
+}
+
 .text-theme-dark{
   color: white;
 }
@@ -370,26 +301,22 @@ div {
 
 .footer_place{
   background-color: black;
-  /* min-height: 350px; */
-
 }
 
 .columns{
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding:60px 0 40px 0;
   width: 90%;
   min-height: 250px;
 }
+
 .column__content-copyright{
   display: flex;
   flex-basis: 711px;
   justify-content: space-between;
   flex-direction: column;
 }
-.column__content-info{}
-.column__content-social{}
 
 .logo__place-footer{
   display:flex;
@@ -398,45 +325,32 @@ div {
   top: 0;
   left: 0;
 }
+
 .author{
-  /* left: 0; */
-  /* bottom: 18px; */
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
+
 .column-heading{
 line-height: 30px;
 font-size: 18px;
 font-weight: 600;
 }
-.column-heading-text {
-  margin: 0;
-  padding: 0;
-}
+
 .column-links{
-  margin: 20px 0 18px;
-  /* line-height: 30px;
-  font-size: 18px;
-  font-weight: normal; */
+  margin: 20px 0 16px;
 }
 
 .social-icon{
   width: 16px;
   height: 16px;
   margin-right: 10px;
-  /* margin: 0 10px 0 0;
-  padding: 0; */
 }
+
 .column-link{
-  margin: 0;
-  padding: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-.links-text{
-  padding: 0;
-  margin: 0;
 }
