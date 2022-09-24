@@ -10,26 +10,34 @@
 }
 
 /* Удаление всех отступов */
-.margin-padding-deletion{
+.margin-padding-deletion {
   padding: 0;
   margin: 0;
 }
 
 /* Форматирование текста */
-.line-format{
+.line-format {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
 
 /* Авто-отступ по бокам */
-.horisontal-block-centering{
+.horisontal-block-centering {
   margin: 0 auto;
 }
 
 /* Убираем подчеркивание ссылки */
 .link {
   text-decoration: none;
+}
+
+.logo__place_header {
+  background-image: url(../images/logo_place_header.svg);
+}
+
+.logo__place_footer {
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 /* Научиться учиться */
@@ -57,12 +65,6 @@
 .logo {
   height: 32px;
   width: 228px;
-}
-.logo__place_header{
-  background-image: url(../images/logo_place_header.svg);
-}
-.logo__place_footer{
-  background-image: url(../images/logo_place_footer.svg);
 }
 
 /*Пишем правило для title */
@@ -163,11 +165,10 @@
 
 /* Цифры и факты */
 .section-title {
-  padding: 0;
   display: flex;
+  justify-content: center;
   width: 60%;
   margin-bottom: 20px;
-  justify-content: center;
 }
 
 .section-title-text {
@@ -177,17 +178,16 @@
 }
 
 .section-subtitle {
-  padding: 0;
   display: flex;
   justify-content: center;
   width: 60%;
 }
 
-.digits__table {
+.table-width {
   width: 1100px;
 }
 
-.digits{
+.digits {
   padding: 100px 0;
 }
 
@@ -224,8 +224,8 @@
 .feynman__title {
   position: relative;
   text-align: center;
-  width: 648px;
   z-index: 1;
+  width: 648px;
 }
 
 .feynman__title-text {
@@ -236,10 +236,9 @@
 
 .feynman__subtitle {
   position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 70px;
+  text-align: center;
   z-index: 1;
+  margin-top: 70px;
 }
 
 .feynman__text {
@@ -285,71 +284,73 @@
   margin-right: 0;
 }
 
-.text-theme-dark{
+.text-theme-dark {
   color: white;
 }
-.triangle{
+
+.triangle {
   position: absolute;
   right: -210px;
   top: 0;
   z-index: 0;
 }
-.triangle-pic{
+
+.triangle-pic {
   height: 877px;
   width: 877px;
 }
 
-.footer_place{
+.footer_place {
   background-color: black;
 }
 
-.columns{
+.columns {
   display: flex;
   justify-content: space-between;
-  padding:60px 0 40px 0;
+  padding: 60px 0 40px 0;
   width: 90%;
   min-height: 250px;
 }
 
-.column__content-copyright{
+.column__content-copyright {
   display: flex;
   flex-basis: 711px;
   justify-content: space-between;
   flex-direction: column;
 }
 
-.logo__place-footer{
-  display:flex;
+.logo__place-footer {
+  display: flex;
   width: 228px;
   height: 32px;
   top: 0;
   left: 0;
 }
 
-.author{
+.author {
   margin: 18px 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
-.column-heading{
-line-height: 30px;
-font-size: 18px;
-font-weight: 600;
+.column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.column-links{
+.column-links {
   margin: 20px 0 16px;
 }
 
-.social-icon{
+.social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
 }
 
-.column-link{
+.column-link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
