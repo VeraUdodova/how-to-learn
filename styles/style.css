@@ -1,5 +1,5 @@
 div {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 
 }
 
@@ -33,8 +33,8 @@ div {
   position: absolute;
   left: 64px;
   top: 30px;
-  height: 32px;
-  width: 228px;
+  /* height: 32px;
+  width: 228px; */
   z-index: 3;
 }
 
@@ -43,6 +43,10 @@ div {
   padding: 0;
   height: 32px;
   width: 228px;
+  background-image: url(../images/logo_place_header.svg);
+}
+.logo__place-footer{
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 /*Пишем правило для title */
@@ -244,7 +248,7 @@ div {
   padding: 0;
   margin: 0;
   width: 250px;
-  border: 1px solid black
+  /* border: 1px solid black */
 }
 
 /* Метод Фейнмана */
@@ -366,7 +370,7 @@ div {
 
 .footer_place{
   background-color: black;
-  min-height: 350px;
+  /* min-height: 350px; */
 
 }
 
@@ -376,6 +380,7 @@ div {
   margin: 0 auto;
   padding:60px 0 40px 0;
   width: 90%;
+  min-height: 250px;
 }
 .column__content-copyright{
   display: flex;
@@ -387,7 +392,7 @@ div {
 .column__content-social{}
 
 .logo__place-footer{
-  display: flexbox;
+  display:flex;
   width: 228px;
   height: 32px;
   top: 0;
@@ -397,16 +402,41 @@ div {
   /* left: 0; */
   /* bottom: 18px; */
   margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 .column-heading{
-  /* margin-bottom: 20px; */
+line-height: 30px;
+font-size: 18px;
+font-weight: 600;
+}
+.column-heading-text {
+  margin: 0;
+  padding: 0;
 }
 .column-links{
   margin: 20px 0 18px;
+  /* line-height: 30px;
+  font-size: 18px;
+  font-weight: normal; */
 }
+
 .social-icon{
   width: 16px;
   height: 16px;
   margin-right: 10px;
+  /* margin: 0 10px 0 0;
+  padding: 0; */
 }
-.column-link{}
+.column-link{
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.links-text{
+  padding: 0;
+  margin: 0;
+}
