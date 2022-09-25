@@ -29,11 +29,19 @@
 
 /* Убираем подчеркивание ссылки */
 .link {
+  position: relative;
   text-decoration: none;
-}
+  z-index: 1;
+  color: #2f80ed
 
+}
+/*Пишем правило для лого */
 .logo__place_header {
   background-image: url(../images/logo_place_header.svg);
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 3;
 }
 
 .logo__place_footer {
@@ -55,12 +63,12 @@
 }
 
 /*Пишем правило для лого */
-.logo_header {
-  position: absolute;
-  left: 64px;
-  top: 30px;
-  z-index: 3;
-}
+/*.logo_header {*/
+/*  position: absolute;*/
+/*  left: 64px;*/
+/*  top: 30px;*/
+/*  z-index: 3;*/
+/*}*/
 
 .logo {
   height: 32px;
@@ -69,31 +77,39 @@
 
 /*Пишем правило для title */
 .title {
+  margin: 0 0 0 64px;
   width: 730px;
-  margin-left: 64px;
+  /*margin-left: 64px;*/
   z-index: 2;
-}
-
-.title-text {
   font-size: 102px;
   line-height: 96px;
   font-weight: 600;
 }
 
+/*.title-text {*/
+/*  font-size: 102px;*/
+/*  line-height: 96px;*/
+/*  font-weight: 600;*/
+/*}*/
+
 /*Пишем правило для subtitle */
 .subtitle {
+  margin: 0;
   position: absolute;
   z-index: 2;
   width: 388px;
-  margin-left: 64px;
+  left: 64px;
   bottom: 30px;
-}
-
-.subtitle-text {
   font-size: 18px;
   line-height: 25px;
   font-weight: normal;
 }
+
+/*.subtitle-text {*/
+/*  font-size: 18px;*/
+/*  line-height: 25px;*/
+/*  font-weight: normal;*/
+/*}*/
 
 /*Пишем правило для main-illustration */
 .main-illustration {
@@ -101,12 +117,14 @@
   bottom: 0;
   right: 0;
   z-index: 1;
-}
-
-.header-image {
   height: 608px;
   width: 765px;
 }
+
+/*.header-image {*/
+/*  height: 608px;*/
+/*  width: 765px;*/
+/*}*/
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
@@ -133,6 +151,7 @@
 }
 
 .brief {
+  margin: 0;
   width: 175px;
   display: flex;
 }
@@ -150,6 +169,7 @@
 }
 
 .paragraph {
+  margin: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -165,10 +185,11 @@
 
 /* Цифры и факты */
 .section-title {
+  margin: 0 0 20px 0;
   display: flex;
   justify-content: center;
   width: 60%;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .section-title-text {
@@ -178,6 +199,7 @@
 }
 
 .section-subtitle {
+  margin: 0;
   display: flex;
   justify-content: center;
   width: 60%;
@@ -192,6 +214,7 @@
 }
 
 .table-heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -222,6 +245,7 @@
 }
 
 .feynman__title {
+  margin: 0;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -235,10 +259,11 @@
 }
 
 .feynman__subtitle {
+  margin: 70px 0 0;
   position: relative;
   text-align: center;
   z-index: 1;
-  margin-top: 70px;
+  /*margin-top: 70px;*/
 }
 
 .feynman__text {
@@ -265,7 +290,7 @@
 .kaufman {
   position: relative;
   padding: 90px 0;
-  background-color: black;
+  background-color: #000000;
   overflow: hidden;
 }
 
@@ -301,7 +326,7 @@
 }
 
 .footer_place {
-  background-color: black;
+  background-color: #000000;
 }
 
 .columns {
@@ -335,6 +360,7 @@
 }
 
 .column-heading {
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
