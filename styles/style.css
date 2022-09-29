@@ -170,7 +170,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  position: relative;
   list-style: none;
   flex-wrap: wrap;
 }
@@ -182,6 +181,7 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
+  z-index: 1;
 }
 
 .table__heading {
