@@ -3,7 +3,7 @@
   text-decoration: none;
   z-index: 1;
   color: #2f80ed;
-  transition: opacity;
+  transition: opacity .5s linear;
 }
 
 .header__link:hover {
