@@ -1,0 +1,11 @@
+/* Убираем подчеркивание ссылки */
+.header__link {
+  text-decoration: none;
+  z-index: 1;
+  color: #2f80ed;
+  transition: opacity;
+}
+
+.header__link:hover {
+  opacity: 50%;
+}

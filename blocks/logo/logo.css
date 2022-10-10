@@ -1,0 +1,8 @@
+/*Пишем правило для лого */
+.logo {
+  background-image: url(../../images/logo_place_header.svg);
+  margin: 0;
+  padding: 0;
+  height: 32px;
+  width: 228px;
+}

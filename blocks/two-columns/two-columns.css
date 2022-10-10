@@ -1,0 +1,6 @@
+/* блок с текстом про Главные проблемы обучения */
+.two-columns {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
